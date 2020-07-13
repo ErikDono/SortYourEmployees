@@ -3,12 +3,12 @@ import { Table } from "reactstrap";
 
 
 export const ResultTable = (props) => {
-  const headers = [ "Name", "Title", "Salary "]
+  const headers = [ "ID","Name", "Time With Company", "Location"]
   console.log(props)
   return <Table>
     <thead>
       <tr>
-        <th>#</th>
+        
         {/* {props.results.length ? Object.keys(props.results[0]).map(header => {
           return <th onClick={() => props.onClick(header.toLowerCase())}>{header}</th>
         }) : ""} */}
@@ -24,6 +24,6 @@ export const ResultTable = (props) => {
 }
 
 export const Row = (props) => {
-  return <tr><td>{props.id}</td><td>{JSON.stringify(props.data.name.first  + " " + props.data.name.last)}</td></tr>
+return <tr><td>{props.id}</td><td>{JSON.stringify(props.data.name.first + " " + props.data.name.last)}</td><td>{JSON.stringify(props.data.registered.age)}</td><td>{JSON.stringify(props.data.location.city + ", " + props.data.location.country)}</td></tr>
 
 }
