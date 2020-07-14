@@ -38,7 +38,7 @@ function App() {
         })
         break;
       default:
-        alert("Erik, set that shit up")
+        alert("Erik, set that up")
         break;
     }
   }
